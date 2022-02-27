@@ -7,12 +7,12 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // MIDDLEWARES
-app(express.static('public'));
+app.use(express.static('public'));
 /* app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
  */
 app.get('/', function (req, res) {
-  res.send('Hello');
+  res.render('index');
 });
 
 const port = 3000;
