@@ -15,6 +15,10 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
+app.get('/add', function (req, res) {
+  res.render('add');
+});
+
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server running port ${port}`);
