@@ -9,7 +9,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // CONNECT DB dbUser 5gu8994Htd4N97U
-mongoose.connect('mongodb+srv://dbUser:5gu8994Htd4N97U@cluster0.veenn.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://dbUser:5gu8994Htd4N97U@cluster0.veenn.mongodb.net/agency?retryWrites=true&w=majority')
 
 
 // MIDDLEWARES
