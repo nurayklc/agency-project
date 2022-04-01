@@ -9,14 +9,18 @@ const app = express();
 app.set('view engine', 'ejs');
 
 // CONNECT DB dbUser 5gu8994Htd4N97U
-mongoose.connect('mongodb+srv://dbUser:5gu8994Htd4N97U@cluster0.veenn.mongodb.net/agency?retryWrites=true&w=majority')
-
+mongoose
+  .connect(
+    'mongodb+srv://dbUser:5gu8994Htd4N97U@cluster0.veenn.mongodb.net/agency?retryWrites=true&w=majority'
+  )
+  .then(() => {
+    console.log('DB Connected!')
+  });
 
 // MIDDLEWARES
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 
 // ROUTING
 app.get('/', function (req, res) {
