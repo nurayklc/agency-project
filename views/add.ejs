@@ -18,7 +18,7 @@
       method="post"
       action="/portfolio"
       id="addForm"
-      data-sb-form-api-token="API_TOKEN"
+      encType="multipart/form-data"
     >
       <div class="row align-items-stretch mb-5">
         <div class="col-md-6">
@@ -102,11 +102,7 @@
                 type="file"
                 name="image"
                 class="form-control-file rounded-0"
-                required
               />
-              <div class="invalid-feedback" >
-                A image is required.
-              </div>
             </div>
           </div>
         </div>

@@ -3,9 +3,11 @@ const Schema = mongoose.Schema;
 
 const PortfolioSchema = new Schema({
   name: String,
-  email: String,
-  phone: Number,
-  message: String,
+  title: String,
+  client: String,
+  category: String,
+  description: String,
+  image: String,
   dateCreated: {
     type: Date,
     default: Date.now,
